@@ -29,7 +29,8 @@ const BatchMode = () => {
       let maxMatches = 0;
 
       // Find the best matching answer
-      for (const [key, entry] of Object.entries(securityQuestionnaire)) {
+      for (const [key,entry] of Object.entries(securityQuestionnaire)) {
+        console.log("Checking entry for key:", key);
         const matches = normalizedQuestion.split(' ').filter(word => 
           entry.question.toLowerCase().includes(word)
         ).length;
