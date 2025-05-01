@@ -73,7 +73,6 @@ const ConversationalMode = () => {
 
     // Find the best matching keyword
     let bestMatch = null;
-    let bestMatchKey ;
     let maxMatches = 0;
 
     for (const [keyword, entryKey] of Object.entries(keywordMap)) {
