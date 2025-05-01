@@ -2,13 +2,6 @@ import { useState } from 'react';
 import {
   Box,
   Button,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
   Typography,
   CircularProgress,
   Accordion,
@@ -22,7 +15,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import { Question, Questionnaire } from '../types';
 import { securityQuestionnaire } from '../types/questionnaire';
 import { saveAs } from 'file-saver';
-import { Document, Packer, Paragraph, TextRun, Table as DocxTable, TableRow as DocxTableRow, TableCell as DocxTableCell } from 'docx';
+import { Document, Packer, Paragraph, TextRun } from 'docx';
 import * as XLSX from 'xlsx';
 
 const BatchMode = () => {
