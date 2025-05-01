@@ -87,7 +87,6 @@ const ConversationalMode = () => {
           if (matches > maxMatches) {
             maxMatches = matches;
             bestMatch = entry;
-            bestMatchKey = entryKey;
           }
         }
       }
